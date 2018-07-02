@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba registro de usuarios</title>
+  
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+    let config = {
+      apiKey: "AIzaSyBqGOoPiGov2tepu9YuCb7KJ423HcTTUVE",
+      authDomain: "usuarios-1e3b0.firebaseapp.com",
+      databaseURL: "https://usuarios-1e3b0.firebaseio.com",
+      projectId: "usuarios-1e3b0",
+      storageBucket: "usuarios-1e3b0.appspot.com",
+      messagingSenderId: "6033069535"
+    };
+    firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <h4>Registro de usuarios</h4>
+    <input id="email" type="email" placeholder="Ingresa e-mail">
+    <input id="password" type="password" placeholder="Ingresa contraseña">
+    <button id="registrar">Registrar</button>
+
+    <h4>Inicio sesión</h4>
+    <input id="email2" type="email" placeholder="Ingresa e-mail">
+    <input id="password2" type="password" placeholder="Ingresa contraseña">
+    <button id="ingresar">Ingresar</button>
+
+    <div id="contenido">
+     
+    </div>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
